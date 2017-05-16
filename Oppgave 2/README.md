@@ -21,7 +21,7 @@ Forskjellen mellom TCP og UDP er at TCP garanterer at mottakeren mottar pakkene 
 Når man bruker UDP, sendes pakker bare til mottakeren. Avsenderen venter ikke på at mottakeren mottok pakken. Det vil bare fortsette å sende de neste pakkene.  Hvis du er mottakeren, og du savner noen UDP pakker, så dårlig du kan ikke be disse pakkene igjen. Det er ingen garanti for at du får alle pakkene, og det er ingen måte å spørre om en pakke igjen, hvis du savner det.
 
 ii)  Hvor stor kan en TCP pakke være?
-Samme som UDP, er maks størrelsen på en TCP pakke 65535 bytes. Ulikt UDP, så er størrelsen som blir brukt langt mindre. MTU (Maximum Transmission Unit), som blir brukt av TCP for å kontrollere størrelse, forsikrer at pakkestørrelsen ikke er over 1500 bytes.
+Samme som UDP, er maks størrelsen på en TCP pakke 65535 bytes. Ulikt UDP, så er størrelsen som blir brukt langt mindre. MTU (Maximum Transmission Unit), som blir brukt av TCP for å kontrollere størrelse, forsikrer at pakkestørrelsen ikke er over 1500 bytes. Den egentlige størrelsen på dataen blir under 1500 bytes. Header tar opp 20 til 60 byte plass i pakken.
 
 iii) hva er fragmentering, hvorfor oppstår det og hvordan håndterer man det?
 Forkortelser:
